@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="355.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.emsi.firstfx.interfaces.dashboard.DashboardController">
+    <VBox alignment="CENTER" prefHeight="355.0" prefWidth="248.0" spacing="10" style="-fx-background-color: lightgray;">
+        <Button fx:id="logoutButton" onAction="#handleLogoutButton" text="Logout" style="-fx-background-color: white;" />
+        <Button fx:id="exportExcelButton" onAction="#handleLogoutButton" text="Export Excel" style="-fx-background-color: white;" />
+        <Button fx:id="importExcelButton" onAction="#handleLogoutButton" text="Import Excel" style="-fx-background-color: white;" />
+        <Button fx:id="exportJSONButton" onAction="#handleLogoutButton" text="Export JSON" style="-fx-background-color: white;" />
+        <Button fx:id="importJSONButton" onAction="#handleLogoutButton" text="Import JSON" style="-fx-background-color: white;" />
+    </VBox>
+    <VBox alignment="CENTER" prefHeight="355.0" prefWidth="248.0" spacing="10" style="-fx-background-color: lightgray;">
+
+      <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="85.0" spacing="10">
+            <TextField fx:id="idField" disable="true" prefWidth="50" />
+            <Button fx:id="fetch" onAction="#fetchFilmdata">Fetch</Button>
+      </HBox>
+
+        <HBox alignment="TOP_CENTER" spacing="10">
+            <Label prefHeight="18.0" prefWidth="54.0" text="Film Title:" />
+            <TextField fx:id="titleField" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Category:" />
+            <TextField fx:id="categoryField" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Min Age" />
+            <TextField fx:id="minAgeField" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Max age" />
+            <TextField fx:id="maxAgeField" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Date " />
+            <DatePicker fx:id="registrationDateField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Button onAction="#handleValidateButton" style="-fx-background-color: #4CAF50;" text="Ajouter" />
+            <Button onAction="#handleUpdate" style="-fx-background-color: #2196F3;" text="Update" />
+            <Button onAction="#handleDelete" style="-fx-background-color: #F44336;" text="Delete" />
+        </HBox>
+    </VBox>
+
+    <TableView fx:id="filmTable" prefHeight="247.0" prefWidth="900.0">
+        <columns>
+            <TableColumn prefWidth="150" text="Id">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Title">
+                <cellValueFactory>
+                    <PropertyValueFactory property="titre" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="category" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100" text="Minimum Age">
+                <cellValueFactory>
+                    <PropertyValueFactory property="min_age" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100" text="Maximum Age">
+                <cellValueFactory>
+                    <PropertyValueFactory property="max_age" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Registration Date">
+                <cellValueFactory>
+                    <PropertyValueFactory property="registrationDate" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</HBox>

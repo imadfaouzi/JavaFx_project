@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import ma.emsi.firstfx.HelloController?>
+
+<VBox alignment="CENTER" prefHeight="208.0" prefWidth="302.0" spacing="10" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.emsi.firstfx.HelloController">
+
+    <HBox alignment="center" spacing="10">
+        <ImageView fitHeight="74.0" fitWidth="77.0">
+            <image>
+                <Image url="@../../../images/box.png" />
+            </image>
+        </ImageView>
+    </HBox>
+    <Label alignment="CENTER" fx:id="alertMessage" contentDisplay="CENTER" prefHeight="18.0" prefWidth="237.0" text="Label" textFill="RED" visible="false" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Username:" />
+        <TextField fx:id="usernameField" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Password:" />
+        <PasswordField fx:id="passwordField" />
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button text="Login" fx:id="loginButton" onAction="#loginButtonClicked" />
+        <Button text="Sign Up" fx:id="Singup" onAction="#loginButtonClicked" />
+    </HBox>
+</VBox>
+
+
+

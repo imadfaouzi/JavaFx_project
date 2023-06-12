@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "titre": "The Shawshank Redemption",
+        "category": "drama1",
+        "min_age": "16",
+        "max_age": "99",
+        "registrationDate": "1994-10-14 00:00:00"
+    },
+    {
+        "id": "2",
+        "titre": "The Godfather",
+        "category": "Crime",
+        "min_age": "18",
+        "max_age": "99",
+        "registrationDate": "1972-03-24 00:00:00"
+    },
+    {
+        "id": "3",
+        "titre": "The Dark Knight",
+        "category": "Action",
+        "min_age": "14",
+        "max_age": "99",
+        "registrationDate": "2008-07-18 00:00:00"
+    },
+    {
+        "id": "4",
+        "titre": "The Lord of the Rings: The Fellowship of the Ring",
+        "category": "Fantasy",
+        "min_age": "12",
+        "max_age": "99",
+        "registrationDate": "2001-12-19 00:00:00"
+    },
+    {
+        "id": "5",
+        "titre": "Forrest Gump",
+        "category": "Drama",
+        "min_age": "12",
+        "max_age": "99",
+        "registrationDate": "1994-07-06 00:00:00"
+    },
+    {
+        "id": "6",
+        "titre": "film6",
+        "category": "cat6",
+        "min_age": "10",
+        "max_age": "60",
+        "registrationDate": "2023-05-16 00:00:00"
+    }
+]
