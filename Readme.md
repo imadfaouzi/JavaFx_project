@@ -17,9 +17,10 @@
 ![Dashboard](./images/3.png)
 
 **2) Les fichiers D'Exportation:**
-![Export Files](./images/4.png)
+
 
 **a) Excel:**
+![Export Files](./images/4.png)
 ![Excel](./imagess/5.png)
 
 
@@ -27,11 +28,11 @@
 
 **b) JSON:**
 ![JSON](./images/6.png)
-
+![Export Files](./images/7.png)
 
 <a name="br4"></a> 
 
 **3) Les fichiers D'Exportation:**
-![Export Files](./images/7.png)
+![Export Files](./images/8.png)
 
 **Merci**
